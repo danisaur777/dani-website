@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 align="center"> Dani's  Services</h1>
+            <div class="service">
+                <img src="catmeme.jpeg.jpg" alt="Service 1" width="100px" height="100px">
+                <h2>Special Cat Delivery</h2>
+                <p>Most special cat in the world.</p>
+                <button type="button" onclick="showDetails('service1')">Show Details</button>
+                <div id="service1-details" class="details">
+                    <section>
+                        <h2>Information</h2>
+                        
+                            <p>
+                            <b>Name:</b> Jobert <br>
+                            <b>Age:</b> 3 years old <br>
+                            <b>Address:</b> Palipat-lipat laging napapalayas e. 
+                            </p>
+                        <h2>Pros.</h2>
+                        <ol>
+                            <li>This cat can deliver your food in a minutes.</li>
+                            <li>This is the most highed iq cat in the world.</li>
+                            <li>This cat can talk to human.</li>
+                            <li>This cat can dance and many more talent</li>
+                        </ol>
+                            <h2>Cons.</h2>
+                            <ol>
+                                <li>Nangangain ng ulam sa lamesa.</li>
+                                <li>Hindi marunong manghuli ng daga.</li>
+                            </ol>
+
+
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024  Dani's  Website. All rights reserved.</p>
+    </footer>
+    <script>
+        function showDetails(service) {
+    var details = document.getElementById(service + '-details');
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+    } else {
+        details.style.display = 'none';
+    }
+}
+    </script>
+</body>
+</html>
